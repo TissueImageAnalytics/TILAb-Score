@@ -1,6 +1,6 @@
 TILAb score quantify the aboundance of Tumour Infiltrating Lymphocytes (TIL) in a Whole Slide Image. 
 
-Copyright (C) <2019>  <Muhammad Shaban>
+Copyright (C) 2019  TIA-Lab
 
 This program is free software: you can redistribute it and/or modify 
 it under the terms of the GNU General Public License as published by
