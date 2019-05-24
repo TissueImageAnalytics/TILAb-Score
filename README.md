@@ -40,6 +40,7 @@ dataset
        -- 2_Tumour
        -- 3_Lymphocyte
 ```
+We have plan to release the train and validation dataset after acceptance of our paper in Nature Scientific Reports journal. Please contact Prof. Nasir Rajpoot (n.m.rajpoot@warwick.ac.uk) for dataset related queries.
 
 ### Training
 The training.py file in `src/` directory will train the model using the dataset in `dataset/` directory. You may need to tune the hyperparameters for training on your own dataset to train an optimal model.
@@ -71,4 +72,4 @@ See the list of [contributors](https://github.com/TIA-Lab/TILAb_Score/graphs/con
 
 ## License
 
-This project is licensed under the GNU General Public License - see the [LICENSE.md](https://github.com/TIA-Lab/TILAb_Score/blob/master/License.md) file for details
+This project is licensed under the GNU General Public License - see the [LICENSE.md](https://github.com/TIA-Lab/TILAb_Score/blob/master/License.md) file for details.
