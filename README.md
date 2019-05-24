@@ -67,7 +67,7 @@ Following software packages will be required to run this code:
 ```
 ## Authors
 
-See the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See the list of [contributors](https://github.com/TIA-Lab/TILAb_Score/graphs/contributors) who participated in this project.
 
 ## License
 
