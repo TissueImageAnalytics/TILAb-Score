@@ -7,8 +7,8 @@
 0. [Citation](#citation)
 0. [Dataset](#Dataset)
 0. [Model](#model)
-0. [Results](#results)
-0. [Third-party re-implementations](#third-party-re-implementations)
+0. [Prerequisites](#prerequisites)
+0. [License](#License)
 
 ### Introduction
 
@@ -41,11 +41,6 @@ dataset
        -- 3_Lymphocyte
 ```
 
-* `src/` will only contain executable .py files, supporting classes, functions and codebase. All should go into the appropriately named directories within `src/`.
-* `doc/` contains any text based information, or documentation package
-* `etc/` is a dump for everything not relevant to other directories. That includes images, used in the main readme or doc.
-
-
 ### Training
 The training.py file in `src/` directory will train the model using the dataset in `dataset/` directory. You may need to tune the hyperparameters for training on your own dataset to train an optimal model.
 
@@ -76,4 +71,4 @@ See the list of [contributors](https://github.com/your/project/contributors) who
 
 ## License
 
-This project is licensed under the some License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU General Public License - see the [LICENSE.md](https://github.com/TIA-Lab/TILAb_Score/blob/master/License.md) file for details
