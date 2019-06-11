@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>TILAb-Score</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>TILAb-Score</h1>
+        <p>A measure to quantify TIL abundance in Histology Images</p>
+        <p class="view"><a href="https://github.com/TIA-Lab/TILAb-Score">View the Project on GitHub <small>TIA-Lab/TILAb-Score</small></a></p>
+        <ul>
+          <li><a href="https://github.com/TIA-Lab/TILAb-Score/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/TIA-Lab/TILAb-Score/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/TIA-Lab/TILAb-Score">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+
+		<b>Table of Contents</b>
+		<blockquote><a href="#introduction">Introduction</a></blockquote>
+		<blockquote><a href="#dataset">Dataset</a></blockquote>
+		<blockquote><a href="#method">Method</a></blockquote>
+		<blockquote><a href="#results">Results</a></blockquote>
+		<blockquote><a href="#citation">Citation</a></blockquote>
+		
+      </header>
+      <section>
+        <h1>A Novel Digital Score for Abundance of Tumour Infiltrating Lymphocytes Predicts Disease Free Survival in Oral Squamous Cell Carcinoma</h1>
+
+        <p><em>View the <a href="https://ascopubs.org/doi/abs/10.1200/JCO.2018.36.15_suppl.e18036">Publication</a>.</em></p>
+
+		<h2 id="introduction">Introduction</h2>
+        <p align="justify"><b>Tumour Infiltrating Lymphocytes (TILs)</b> are the lymphocytes that found within or in the vicinity of tumour. Numerous studies have reported the correlation of TIL density with improved overall survival (OS) and longer disease-free survival (DFS). <b>TILAb-Score</b> is a pronostic biomarker which quantify the TIL abundance based on lymphocytes to tumour ratio and their colocalization.</p>
+
+		<h2 id="dataset">Dataset</h2>
+		<p align="justify">The dataset consists of 70 cases including 60 OSCC and 10 control cases. These cases are collected from the patients in Shaukat Khanum Memorial Cancer Hospital & Research Centre (SKMT) Lahore, Pakistan. The malignent cases were splitted into two equal sized subsets, one for modelling and the other for test. For the classification of biologically significant regions, more than half million regions (belonging to different classes such as tumour, lymphocytes, and stroma) were marked by an expert pathologist in all WSIs of the modelling cohort. The annotations were then used for training and validation of the proposed method.</p>
+		<h2 id="method">Method</h2>
+		<p align="justify">Whole slide images are multi-gigapixel images and cannot be used directly for image analysis tasks particularly training a deep learning based classifier. Therefore, we divide the WSIs into small regions (patches) for processing. A deep learning based classifier is applied on the patches to identify whether the patch contains tumour, lymphocytes or other histological primitives. However, the regions where the lymphocytes are infiltrating the tumour  may not be confined within a patch. Besides, there is considerable variation in the size of TIL regions, making the quantification of TILs a non-trivial task. We address this issue by adopting the widely accepted definition of TILs, i.e., lymphocytes that lie in the neighbourhood  of tumour  areas. The patch labels predicted as lymphocytes or tumour  are then used to compute a statistical measure of co-localization, which is further incorporated into the computation of the TILAb score of lymphocytic infiltration.</p>
+		<p align="justify">
+		<img src="https://github.com/TIA-Lab/TILAb-Score/blob/master/etc/flow_diagram.png?raw=true"/>
+		</p>
+		<h2 id="results">Results</h2>
+		<p align="justify">The prognostic significance of TILAb score for DFS is investigated using Kaplan-Meier (KM) curves. Kaplan-Meier curves in following figures show that the proposed TILAb score is significantly associated with long term (low risk) DFS of OSCC patients (p = 0.0039). However, the lymphocytic percentage in a WSI without any correlation with tumour does not show any statistical significance.</p>
+		<p align="justify">
+		<img src="https://github.com/TIA-Lab/TILAb-Score/blob/master/etc/TILAb_Score.png?raw=true" height="250" width="250"/><img src="https://github.com/TIA-Lab/TILAb-Score/blob/master/etc/Lymphocyte_Percentage.png?raw=true" height="250" width="250"/>
+		</p>
+		<h2 id="citation">Citation</h2>
+		The journal paper on this work is currently under review in <b>Nature Scientific Reports</b>. If you use the code in your research, please cite our abstract on this work:
+<small><pre>@misc{shaban2018prognostic,
+   title={Prognostic significance of automated score of tumor infiltrating lymphocytes in oral cancer.},
+   author={Shaban, Muhammad and Khurram, Syed Ali and Hassan, Mariam and Mushtaq, Sajid and Loya, Asif and Rajpoot, Nasir},
+   year={2018},
+   publisher={American Society of Clinical Oncology}
+}</pre></small>
+        
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="http://github.com/orderedlist">Muhammad Shaban</a></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
