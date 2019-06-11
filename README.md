@@ -1,6 +1,6 @@
 ![IF FORKED DO NOT REMOVE](etc/flow_diagram.png)
 
-# A Novel Digital Score for Abundance of Tumour Infiltrating Lymphocytes Predicts Disease Free Survival in Oral Squamous Cell Carcinoma
+# [A Novel Digital Score for Abundance of Tumour Infiltrating Lymphocytes Predicts Disease Free Survival in Oral Squamous Cell Carcinoma](https://tia-lab.github.io/TILAb-Score/)
 
 ### Table of Contents
 0. [Introduction](#introduction)
