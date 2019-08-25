@@ -16,7 +16,7 @@ This repository contains the implementation of TILAb-score as described in the p
 
 ### Citation
 
-The journal paper on this work is currently under review in **Nature Scientific Reports**. If you use this code in your research, please cite our abstract on this work:
+The journal paper on this work has been accepted in **Nature Scientific Reports** and will be published soon. Meanwhile, if you use this code in your research, please cite our abstract on this work:
 
 	@misc{shaban2018prognostic,
         title={Prognostic significance of automated score of tumor infiltrating lymphocytes in oral cancer.},
