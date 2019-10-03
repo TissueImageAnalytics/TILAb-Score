@@ -35,16 +35,14 @@
       <section>
         <h1>A Novel Digital Score for Abundance of Tumour Infiltrating Lymphocytes Predicts Disease Free Survival in Oral Squamous Cell Carcinoma</h1>
 
-		<p><em>The paper has been accepted in <b>Nature Scientific Reports</b> journal and will be publicly available soon.</em></p>
-        <!--
-		<p><em>View the <a href="https://ascopubs.org/doi/abs/10.1200/JCO.2018.36.15_suppl.e18036">Publication</a>.</em></p>
-		-->
-
+		<p><em>The paper has been published in <a href="https://www.nature.com/articles/s41598-019-49710-z#Sec17">Nature Scientific Reports</a> journal.</em></p>
+        
 		<h2 id="introduction">Introduction</h2>
         <p align="justify"><b>Tumour Infiltrating Lymphocytes (TILs)</b> are the lymphocytes that found within or in the vicinity of tumour. Numerous studies have reported the correlation of TIL density with improved overall survival (OS) and longer disease-free survival (DFS). <b>TILAb-Score</b> is a pronostic biomarker which quantify the TIL abundance based on lymphocytes to tumour ratio and their colocalization.</p>
 
 		<h2 id="dataset">Dataset</h2>
 		<p align="justify">The dataset consists of 70 cases including 60 OSCC and 10 control cases. These cases are collected from the patients in Shaukat Khanum Memorial Cancer Hospital & Research Centre (SKMT) Lahore, Pakistan. The malignent cases were splitted into two equal sized subsets, one for modelling and the other for test. For the classification of biologically significant regions, more than half million regions (belonging to different classes such as tumour, lymphocytes, and stroma) were marked by an expert pathologist in all WSIs of the modelling cohort. The annotations were then used for training and validation of the proposed method.</p>
+		<p align="justify">Please contact Prof. Nasir Rajpoot (n.m.rajpoot@warwick.ac.uk) for dataset related queries.</p>
 		<h2 id="method">Method</h2>
 		<p align="justify">Whole slide images are multi-gigapixel images and cannot be used directly for image analysis tasks particularly training a deep learning based classifier. Therefore, we divide the WSIs into small regions (patches) for processing. A deep learning based classifier is applied on the patches to identify whether the patch contains tumour, lymphocytes or other histological primitives. However, the regions where the lymphocytes are infiltrating the tumour  may not be confined within a patch. Besides, there is considerable variation in the size of TIL regions, making the quantification of TILs a non-trivial task. We address this issue by adopting the widely accepted definition of TILs, i.e., lymphocytes that lie in the neighbourhood  of tumour  areas. The patch labels predicted as lymphocytes or tumour  are then used to compute a statistical measure of co-localization, which is further incorporated into the computation of the TILAb score of lymphocytic infiltration.</p>
 		<p align="justify">
@@ -56,12 +54,16 @@
 		<img src="https://github.com/TIA-Lab/TILAb-Score/blob/master/etc/TILAb_Score.png?raw=true" /><img src="https://github.com/TIA-Lab/TILAb-Score/blob/master/etc/Lymphocyte_Percentage.png?raw=true"/>
 		</p>
 		<h2 id="citation">Citation</h2>
-		The journal paper on this work has been accepted in <b>Nature Scientific Reports</b> and will be publicly available soon . If you use the code in your research, please cite our abstract on this work:
-<small><pre>@misc{shaban2018prognostic,
-   title={Prognostic significance of automated score of tumor infiltrating lymphocytes in oral cancer.},
-   author={Shaban, Muhammad and Khurram, Syed Ali and Hassan, Mariam and Mushtaq, Sajid and Loya, Asif and Rajpoot, Nasir},
-   year={2018},
-   publisher={American Society of Clinical Oncology}
+		The journal paper on this work has been published in <b>Nature Scientific Reports</b> and publicly available. If you use the code in your research, please cite this work:
+<small><pre>@article{shaban2019novel,
+  title={A novel Digital Score for Abundance of Tumour Infiltrating Lymphocytes predicts Disease free Survival in oral Squamous cell carcinoma},
+  author={Shaban, Muhammad and Khurram, Syed Ali and Fraz, Muhammad Moazam and Alsubaie, Najah and Masood, Iqra and Mushtaq, Sajid and Hassan, Mariam and Loya, Asif and Rajpoot, Nasir M},
+  journal={Scientific reports},
+  volume={9},
+  number={1},
+  pages={1--13},
+  year={2019},
+  publisher={Nature Publishing Group}
 }</pre></small>
         
       </section>

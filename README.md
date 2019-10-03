@@ -16,14 +16,18 @@ This repository contains the implementation of TILAb-score as described in the p
 
 ### Citation
 
-The journal paper on this work has been accepted in **Nature Scientific Reports** and will be published soon. Meanwhile, if you use this code in your research, please cite our abstract on this work:
+The journal paper on this work has been published in [Nature Scientific Reports](https://www.nature.com/articles/s41598-019-49710-z#Sec17). If you use this code in your research, please cite this work:
 
-	@misc{shaban2018prognostic,
-        title={Prognostic significance of automated score of tumor infiltrating lymphocytes in oral cancer.},
-        author={Shaban, Muhammad and Khurram, Syed Ali and Hassan, Mariam and Mushtaq, Sajid and Loya, Asif and Rajpoot, Nasir},
-        year={2018},
-        publisher={American Society of Clinical Oncology}
-    }
+	@article{shaban2019novel,
+	  title={A novel Digital Score for Abundance of Tumour Infiltrating Lymphocytes predicts Disease free Survival in oral Squamous cell carcinoma},
+	  author={Shaban, Muhammad and Khurram, Syed Ali and Fraz, Muhammad Moazam and Alsubaie, Najah and Masood, Iqra and Mushtaq, Sajid and Hassan, Mariam and Loya, Asif and Rajpoot, Nasir M},
+	  journal={Scientific reports},
+	  volume={9},
+	  number={1},
+	  pages={1--13},
+	  year={2019},
+	  publisher={Nature Publishing Group}
+	}
 
 ### Dataset
 The datset for training should be organized in following hierarchy:
@@ -40,7 +44,7 @@ dataset
        -- 2_Tumour
        -- 3_Lymphocyte
 ```
-We have plan to release the train and validation dataset after acceptance of our paper in Nature Scientific Reports journal. Please contact Prof. Nasir Rajpoot (n.m.rajpoot@warwick.ac.uk) for dataset related queries.
+Please contact Prof. Nasir Rajpoot (n.m.rajpoot@warwick.ac.uk) for dataset related queries.
 
 ### Training
 The training.py file in `src/` directory will train the model using the dataset in `dataset/` directory. You may need to tune the hyperparameters for training on your own dataset to train an optimal model.
